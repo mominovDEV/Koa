@@ -11,7 +11,7 @@ const app = new Koa();
 app.use(bodyParser());
 app.use(router()); 
 app.use(cors());
-app.use(kstatic());
+app.use(kstatic("."));
 
 // app.use((ctx) => {
 // //   console.log(ctx);
