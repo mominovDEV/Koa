@@ -3,6 +3,8 @@ const bodyParser = require("koa-bodyparser");
 const cors = require("@koa/cors");
 const kstatic = require("koa-static");
 const config = require("config");
+const pool = require("../config/db");
+
 
 const router = require("./routes/index.routes");
 
